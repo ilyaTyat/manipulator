@@ -9,7 +9,7 @@ public class Manipulator {
     double[] length;
     int countUnit;
 
-    public Manipulator(double[] length, double[] startPoint, double[] angel) {
+    public Manipulator(double[] length, double[] angel, double[] startPoint) {
         this.length = length;
         this.countUnit = length.length;
         this.startPoint = startPoint;
