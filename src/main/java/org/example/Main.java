@@ -8,10 +8,12 @@ import java.util.Scanner;
 public class Main {
 
     public static Manipulator manipulator;
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
+        System.out.println();
         System.out.println("!Данные вводятся сразу после двоеточия через пробел, числа с плавающей запятой записываются через точку!");
+        System.out.println();
         System.out.print("Введите длины звеньев манипулятора:");
         String data1 = in.nextLine();
         String[] lengthStr = data1.split(" ");
@@ -47,6 +49,6 @@ public class Main {
         }
 
         manipulator = new Manipulator(length, angel, startPoint);
-        System.out.println("Конечная точка имеет следующие координаты [x, y]:" + Arrays.toString(manipulator.getEndCoordinate()));
+        System.out.println("Конечная точка имеет следующие координаты [x, y]: \n" + Arrays.toString(manipulator.getEndPoint()));
     }
 }
